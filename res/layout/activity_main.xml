@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00AAA1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.startx.tebakgambar.MainActivity" >
+    
+    <ImageView
+        android:id="@+id/imgtebak"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="false"
+        android:src="@drawable/tebak" />
+    
+    <Button
+        android:id="@+id/btnplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/imgtebak"
+        android:layout_marginTop="140dp"
+        android:background="#ef7918"
+        android:text="MAIN"
+        android:textColor="#fcfbfa"
+        android:textStyle="italic|bold"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/btnCaramain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnplay"
+        android:layout_alignRight="@+id/btnplay"
+        android:layout_below="@+id/btnplay"
+        android:layout_marginTop="14dp"
+        android:background="#ef7918"
+        android:text="CARA MAINNYA"
+        android:textColor="#fcfbfa"
+        android:textStyle="bold|italic"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/saran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnCaramain"
+        android:layout_alignRight="@+id/btnCaramain"
+        android:layout_below="@+id/btnCaramain"
+        android:layout_marginTop="19dp"
+        android:background="#ef7918"
+        android:text="KIRIM SARAN"
+        android:textColor="#fcfbfa"
+        android:textStyle="bold|italic"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/pesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/saran"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="55dp"
+        android:text="Created by Minal Juadli and Ardiansyah"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/tw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fb"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/fb"
+        android:src="@drawable/tw" />
+
+    <ImageView
+        android:id="@+id/fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/saran"
+        android:layout_below="@+id/saran"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/fb" />
+
+</RelativeLayout>
